@@ -5,12 +5,6 @@ Usage: check whether given string is anagram or not
 """
 
 
-# using revese keyword
-def reverse_words(sentence):
-   words = sentence.split()
-   words.reverse()
-   return " ".join(words)
-
 
 # reversed a string  
 def revesed_string(String):
@@ -53,12 +47,10 @@ def main():
     OBS = revesed_string(Input_string)
     Stack = revesed_stack(Input_string)
     Str_rec = reversed_recur(Input_string)
-    Str_rev = reverse_words(Input_string)
+
     print("Output using for loop: ",OBS)
     print("Output using for Stack: ", Stack)
     print("Output using for Recursion: ", Str_rec)
-    print("Output using for rev keyword: ", Str_rev)
-
     print("Fastest way to reversed a string :", Input_string[::-1])
 
 # Starter code starts from here
