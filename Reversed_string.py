@@ -1,7 +1,7 @@
 """
 Created by : Ramprasad Ingle
 Program:- Reveresed a given string with forloop, stack, recursion etc
-Usage: check whether given string is anagram otr not
+Usage: check whether given string is anagram or not
 """
 # reversed a string  
 def revesed_string(String):
@@ -28,7 +28,6 @@ def revesed_stack(String):
 #use .pop() method to get the last element of the list
 
 # Revesed a string using recursion
-
 def reversed_recur(String):
 
     if len(String) == 0:
@@ -37,7 +36,7 @@ def reversed_recur(String):
         return reversed_recur(String[1:]) + String[0]    
 
 
-
+# main function starts from here
 def main():
     print("Enter the string to reversed :")
     Input_string = str(input())
@@ -51,5 +50,6 @@ def main():
 
     print("Fastest way to reversed a string :", Input_string[::-1])
 
+# Starter code starts from here
 if __name__ =="__main__":
     main()
